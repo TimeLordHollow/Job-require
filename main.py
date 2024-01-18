@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup #web scarper package
 import requests
-import pprint
+
 
 
 url = "https://www.linkedin.com/jobs/no-experience-graphic-design-jobs-greater-houston?position=1&pageNum=0"
@@ -12,4 +12,4 @@ html= requests.get(url)
 soup = BeautifulSoup(html.text, 'html.parser')
 
 #prints html
-pprint.pprint(soup)
+print(soup)
